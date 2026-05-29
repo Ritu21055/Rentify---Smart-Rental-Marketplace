@@ -7,7 +7,9 @@ function ManageBookings() {
   useEffect(() => {
     const loadBookings = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/bookings");
+        const res = await axios.get(
+          "https://rentify-smart-rental-marketplace.onrender.com/api/bookings",
+        );
 
         setBookings(res.data);
       } catch (error) {
@@ -20,9 +22,12 @@ function ManageBookings() {
 
   const updateStatus = async (id, newStatus) => {
     try {
-      await axios.put(`http://localhost:5000/api/bookings/${id}`, {
-        status: newStatus,
-      });
+      await axios.put(
+        `https://rentify-smart-rental-marketplace.onrender.com/api/bookings{id}`,
+        {
+          status: newStatus,
+        },
+      );
       window.location.reload();
     } catch (error) {
       console.log(error);

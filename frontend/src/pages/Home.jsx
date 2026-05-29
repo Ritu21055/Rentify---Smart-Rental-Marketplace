@@ -14,7 +14,9 @@ function Home({ search }) {
   useEffect(() => {
     const loadProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/products");
+        const res = await axios.get(
+          "https://rentify-smart-rental-marketplace.onrender.com/api/products",
+        );
 
         setProducts(res.data);
       } catch (error) {

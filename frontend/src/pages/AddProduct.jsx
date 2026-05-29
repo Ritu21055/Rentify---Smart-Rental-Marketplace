@@ -32,7 +32,7 @@ function AddProduct() {
       data.append("image", image);
 
       const res = await axios.post(
-        "http://localhost:5000/api/products/add",
+        "https://rentify-smart-rental-marketplace.onrender.com/api/products/add",
         data,
         {
           headers: {

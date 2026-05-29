@@ -7,7 +7,9 @@ function Bookings() {
   useEffect(() => {
     const loadBookings = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/bookings");
+        const res = await axios.get(
+          "https://rentify-smart-rental-marketplace.onrender.com/api/bookings",
+        );
 
         setBookings(res.data);
       } catch (error) {
