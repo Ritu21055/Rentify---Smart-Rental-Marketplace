@@ -94,7 +94,7 @@ function Home({ search }) {
             fontSize: "18px",
           }}
         >
-          Access What You Need.
+          Borrow More. Own Less.
         </p>
       </div>
 
