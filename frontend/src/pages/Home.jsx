@@ -94,7 +94,7 @@ function Home({ search }) {
             fontSize: "18px",
           }}
         >
-          Rent Smart. Live More.
+          Access What You Need.
         </p>
       </div>
 

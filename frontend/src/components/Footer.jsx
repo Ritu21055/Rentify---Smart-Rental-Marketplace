@@ -6,8 +6,8 @@ function Footer() {
         backgroundColor: "#2563EB",
       }}
     >
-      <h5>Rentify</h5>
-      <p className="mb-1">Rent Smart. Live More.</p>
+      <h5>LendLoop</h5>
+      <p className="mb-1">Borrow More. Own Less.</p>
 
       <small> © 2026 Rentify. All rights reserved.</small>
     </footer>

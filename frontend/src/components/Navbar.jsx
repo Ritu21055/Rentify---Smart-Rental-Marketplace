@@ -12,7 +12,7 @@ function Navbar({ search, setSearch }) {
     >
       <div className="container">
         <Link className="navbar-brand fw-bold" to="/">
-          Rentify
+          LendLoop
         </Link>
 
         <div className="d-flex align-items-center gap-4">
