@@ -23,7 +23,7 @@ function ManageBookings() {
   const updateStatus = async (id, newStatus) => {
     try {
       await axios.put(
-        `https://rentify-smart-rental-marketplace.onrender.com/api/bookings{id}`,
+        `https://rentify-smart-rental-marketplace.onrender.com/api/bookings/${id}`,
         {
           status: newStatus,
         },
