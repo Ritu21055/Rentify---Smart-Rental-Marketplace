@@ -52,7 +52,7 @@ function Home({ search }) {
       };
 
       const res = await axios.post(
-        "http://localhost:5000/api/bookings/add",
+        "https://rentify-smart-rental-marketplace.onrender.com/api/bookings/add",
 
         bookingData,
       );
