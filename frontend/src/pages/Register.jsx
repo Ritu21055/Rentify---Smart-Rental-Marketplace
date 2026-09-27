@@ -17,12 +17,12 @@ function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+ 
     try {
       const res = await axios.post(
         "https://rentify-smart-rental-marketplace.onrender.com/api/users/register",
         formData,
-      );
+      ); 
       alert(res.data.message);
     } catch (error) {
       alert(error?.response?.data?.message || "Something went wrong");

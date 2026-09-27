@@ -101,7 +101,9 @@ function Home({ search }) {
       <div className="row">
         {products
           ?.filter((product) =>
-            product.title.toLowerCase().includes(search.toLowerCase()),
+            (product.title || "")
+              .toLowerCase()
+              .includes((search || "").toLowerCase()),
           )
           .map((product) => (
             <div className="col-md-4 mb-4" key={product._id}>

@@ -16,7 +16,7 @@ router.post("/add",async(req,res)=>{
         res.status(500).json({
             message:error.message
         })
-    }
+    } 
 })
 
 //get all bookings
@@ -29,7 +29,7 @@ router.get("/",async(req,res)=>{
     }catch(error){
         res.status(500).json({
             message:error.message
-        })
+        }) 
     }
 })
 
@@ -50,16 +50,8 @@ router.put("/:id",async(req,res)=>{
         res.status(500).json({
             message:error.message
         })
-    }
+    } 
 })
-
-
-
-
-
-
-
-
 
 
 
